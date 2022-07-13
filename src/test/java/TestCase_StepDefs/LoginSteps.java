@@ -20,12 +20,22 @@ public class LoginSteps extends BaseClass{
 	}
 
 	@When("User enters {string} and {string}")
-	public void user_enters_and(String string, String string2) {
+	public void user_enters_and(String username, String password) throws InterruptedException {
 		Gap_Login_Page gapLoginpage = new Gap_Login_Page(driver);
+		reusableUtil.explicitWait(driver, gapLoginpage.getCloseWindowButton());
+		reusableUtil.clickOnWebElement(gapLoginpage.getCloseWindowButton());
+		reusableUtil.explicitWait(driver, gapLoginpage.getSigninDropDown());
+		reusableUtil.clickOnWebElement(gapLoginpage.getSigninDropDown());
+		reusableUtil.explicitWait(driver, gapLoginpage.getSigninOption());
+		reusableUtil.clickOnWebElement(gapLoginpage.getSigninOption());
+		reusableUtil.explicitWait(driver, gapLoginpage.getCloseWindowButton());
+		reusableUtil.clickOnWebElement(gapLoginpage.getCloseWindowButton());
+		reusableUtil.explicitWait(driver, gapLoginpage.getUserName());
 		reusableUtil.setValueToElement(gapLoginpage.getUserName(), username);
 		testLogger.info("Entered username");
 		reusableUtil.clickOnWebElement(gapLoginpage.getContinue_btn());
 		testLogger.info("Clickedon continue button");
+		reusableUtil.explicitWait(driver, gapLoginpage.getPassword());
 		reusableUtil.setValueToElement(gapLoginpage.getPassword(), password);
 		testLogger.info("Entered Password");
 	    

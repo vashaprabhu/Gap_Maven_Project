@@ -5,12 +5,12 @@
       {
         "name": "User launches the loginpage",
         "aggregatedDurations": {
-          "median": 9.07,
-          "average": 9.07
+          "median": 4.258,
+          "average": 4.258
         },
         "durations": [
           {
-            "duration": 9.07,
+            "duration": 4.258,
             "location": "file:///C:/Users/varsh/Documents/JavaTraining/Com.Gap/src/test/java/FeatureFiles/GapLogin.feature:7"
           }
         ]

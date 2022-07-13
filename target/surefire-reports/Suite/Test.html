@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 11 16:37:52 PDT 2022</td>
+<td>Started on:</td><td>Wed Jul 13 16:02:30 PDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11693 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6733 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Runners.Runner.runScenario()'><b>runScenario</b><br>Test class: Runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "userlogsin with valid credentials", "Optional[Gap Login Feature]"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;password&apos;]&quot;}
-  (Session info: chrome=102.0.5005.115)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;sitewide-x5foxo&apos;]/button&quot;}
+  (Session info: chrome=103.0.5060.114)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;VARSHA&apos;, ip: &apos;192.168.1.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\varsh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ea7bd42913e9c5d8de5de920d16c29e7
-*** Element info: {Using=xpath, value=//input[@name=&apos;password&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\varsh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 81443a3f8cc07a7e0b14eb2cd297a54a
+*** Element info: {Using=xpath, value=//div[@class=&apos;sitewide-x5foxo&apos;]/button}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -97,20 +97,20 @@ Session ID: ea7bd42913e9c5d8de5de920d16c29e7
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
-	at Utilities.ReusableUtils.setValueToElement(ReusableUtils.java:32)
-	at TestCase_StepDefs.LoginSteps.user_enters_and(LoginSteps.java:29)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at Utilities.ReusableUtils.clickOnWebElement(ReusableUtils.java:28)
+	at TestCase_StepDefs.LoginSteps.user_enters_and(LoginSteps.java:25)
 	at ?.User enters &quot;varshaks14@gmail.com&quot; and &quot;Varsha@123&quot;(file:///C:/Users/varsh/Documents/JavaTraining/Com.Gap/src/test/java/FeatureFiles/GapLogin.feature:8)
-... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1655242052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1655242052'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;password&apos;]&quot;}
-  (Session info: chrome=102.0.5005.115)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace327840833", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace327840833'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;sitewide-x5foxo&apos;]/button&quot;}
+  (Session info: chrome=103.0.5060.114)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;VARSHA&apos;, ip: &apos;192.168.1.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\varsh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ea7bd42913e9c5d8de5de920d16c29e7
-*** Element info: {Using=xpath, value=//input[@name=&apos;password&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\varsh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 81443a3f8cc07a7e0b14eb2cd297a54a
+*** Element info: {Using=xpath, value=//div[@class=&apos;sitewide-x5foxo&apos;]/button}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -127,12 +127,12 @@ Session ID: ea7bd42913e9c5d8de5de920d16c29e7
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
-	at Utilities.ReusableUtils.setValueToElement(ReusableUtils.java:32)
-	at TestCase_StepDefs.LoginSteps.user_enters_and(LoginSteps.java:29)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at Utilities.ReusableUtils.clickOnWebElement(ReusableUtils.java:28)
+	at TestCase_StepDefs.LoginSteps.user_enters_and(LoginSteps.java:25)
 	at ?.User enters &quot;varshaks14@gmail.com&quot; and &quot;Varsha@123&quot;(file:///C:/Users/varsh/Documents/JavaTraining/Com.Gap/src/test/java/FeatureFiles/GapLogin.feature:8)
 </pre></div></td>
-<td>9</td>
+<td>5</td>
 <td>Runners.Runner@163e4e87</td></tr>
 </table><p>
 </body>

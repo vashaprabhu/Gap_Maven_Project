@@ -26,6 +26,15 @@ public class Gap_Login_Page {
 	@FindBy(xpath = "//div[@class='loyalty-signInForm-container']//button[contains(text(),'Sign In')]")
 	WebElement signIn_btn;
 	
+	@FindBy(xpath = "//div[@class='sitewide-x5foxo']/button")
+	WebElement closeAdWindow;
+	
+	@FindBy(id="sitewide-account-button-greeting")
+	WebElement signinDropDown;
+	
+	@FindBy(xpath = "//a[contains(text(), 'Sign In')]")
+	WebElement signinOption;
+	
 	public WebElement getUserName() {
 		return userName;
 	}
@@ -40,6 +49,18 @@ public class Gap_Login_Page {
 
 	public WebElement getSignIn_btn() {
 		return signIn_btn;
+	}
+	
+	public WebElement getCloseWindowButton() {
+		return closeAdWindow;
+	}
+	
+	public WebElement getSigninDropDown() {
+		return signinDropDown;
+	}
+	
+	public WebElement getSigninOption() {
+		return signinOption;
 	}
 
 
